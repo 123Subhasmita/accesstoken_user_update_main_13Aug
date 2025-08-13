@@ -337,7 +337,7 @@ public class JansUsernameUpdate extends UsernameUpdate {
             }
 
             if (givenName == null || givenName.isEmpty()) {
-                givenName = "Unknown";
+                givenName = "User";
             }
 
             // Preferred language from user profile or fallback to English
@@ -365,7 +365,7 @@ public class JansUsernameUpdate extends UsernameUpdate {
                     templateData = SendEmailTemplatePt.get(newUsername);
                     break;
                 default:
-                    templateData = SendEmailTemplateEn.get(newUsername);
+                    templateData = SendEmailTemplateEn.get(givenName, newUsername);
                     break;
             }
 
