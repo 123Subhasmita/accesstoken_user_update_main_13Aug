@@ -28,7 +28,7 @@ class SendEmailTemplateEn {
                     <tr>
                       <td style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.625;">
                         
-                        <p>Dear """ + givenName + """,</p>
+                        <p>مرحباً """ + givenName + """,</p>
                         <p>Congratulations! Your username has been successfully created.</p>
 
                         <p>Username: <span style="font-weight: bold;">""" + username + """</span></p>
