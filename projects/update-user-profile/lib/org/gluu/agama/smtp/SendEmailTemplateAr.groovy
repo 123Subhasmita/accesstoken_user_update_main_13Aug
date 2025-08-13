@@ -30,7 +30,8 @@ class SendEmailTemplateAr {
                     <tr>
                       <td style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.625;">
           
-                        <p>مرح """ + givenName + """,باً،</p>
+                        <p>مرحباً """ + givenName + """,</p>
+
                         <p>خبر رائع! تم إنشاء اسم المستخدم الخاص بك بنجاح.</p>
 
                         <p>اسم المستخدم: <span style="font-weight: bold;">""" + username + """</span></p>
