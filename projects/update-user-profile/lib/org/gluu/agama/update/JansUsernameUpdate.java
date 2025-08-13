@@ -350,19 +350,19 @@ public class JansUsernameUpdate extends UsernameUpdate {
             Map<String, String> templateData;
             switch (preferredLang) {
                 case "ar":
-                    templateData = SendEmailTemplateAr.get(newUsername);
+                    templateData = SendEmailTemplateAr.get(givenName, newUsername);
                     break;
                 case "es":
-                    templateData = SendEmailTemplateEs.get(newUsername);
+                    templateData = SendEmailTemplateEs.get(givenName, newUsername);
                     break;
                 case "fr":
-                    templateData = SendEmailTemplateFr.get(newUsername);
+                    templateData = SendEmailTemplateFr.get(givenName, newUsername);
                     break;
                 case "id":
-                    templateData = SendEmailTemplateId.get(newUsername);
+                    templateData = SendEmailTemplateId.get(givenName, newUsername);
                     break;
                 case "pt":
-                    templateData = SendEmailTemplatePt.get(newUsername);
+                    templateData = SendEmailTemplatePt.get(givenName, newUsername);
                     break;
                 default:
                     templateData = SendEmailTemplateEn.get(givenName, newUsername);
