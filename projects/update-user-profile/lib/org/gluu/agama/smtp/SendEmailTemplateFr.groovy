@@ -4,7 +4,7 @@ import java.util.Map;
 
 class SendEmailTemplateFr {
 
-    static Map<String, String> get(String username) {
+    static Map<String, String> get(String givenName, String username) {
 
         String html = """
 <table role="presentation" cellspacing="0" cellpadding="0" width="100%" style="background-color:#F2F4F6;margin:0;padding:0;width:100%;">
@@ -28,7 +28,7 @@ class SendEmailTemplateFr {
                     <tr>
                       <td style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.625;">
                         
-                        <p>Bonjour User,</p>
+                        <p>Bonjour """ + givenName + """,</p>
                         <p>Félicitations ! Votre nom d'utilisateur a été créé avec succès </p>
 
                         <p>Nom d'utilisateur : <span style="font-weight: bold;">""" + username + """</span></p>
