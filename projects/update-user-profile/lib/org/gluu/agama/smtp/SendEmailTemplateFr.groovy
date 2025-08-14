@@ -4,7 +4,7 @@ import java.util.Map;
 
 class SendEmailTemplateFr {
 
-    static Map<String, String> get(String username) {
+    static Map<String, String> get(String givenName, String username) {
 
         String html = """
 <table role="presentation" cellspacing="0" cellpadding="0" width="100%" style="background-color:#F2F4F6;margin:0;padding:0;width:100%;">
@@ -28,7 +28,7 @@ class SendEmailTemplateFr {
                     <tr>
                       <td style="padding:45px;font-family:'Nunito Sans',Helvetica,Arial,sans-serif;color:#51545E;font-size:16px;line-height:1.625;">
                         
-                        <p>Bonjour User,</p>
+                        <p>Bonjour """ + givenName + """,</p>
                         <p>Félicitations ! Votre nom d'utilisateur a été créé avec succès </p>
 
                         <p>Nom d'utilisateur : <span style="font-weight: bold;">""" + username + """</span></p>
@@ -56,7 +56,7 @@ class SendEmailTemplateFr {
                   <tbody>
                     <tr>
                       <td style="padding:20px;font-size:12px;color:#666;">
-                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">Suivez-nous sur :</p>
+                        <p style="margin:0 0 10px 0;font-size:14px;font-weight:bold;color:#565555;">Follow us on:</p>
                         <p>
                           <a href="https://www.facebook.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/facebook.png" style="height:20px;"></a>
                           <a href="https://x.com/PhiWallet" style="margin:0 5px;"><img src="https://storage.googleapis.com/mwapp_prod_bucket/social_icon_images/twitter.png" style="height:20px;"></a>
